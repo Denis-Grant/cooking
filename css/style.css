@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+  body .container {
+    width: 70%;
+    margin: 0 auto; }
+  body .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5px;
+    align-items: center; }
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px 0; }
+  .header .nav__logo {
+    grid-column: 1 / span 1;
+    max-width: 64px;
+    max-height: 64px; }
+  .header .nav__menu-icon {
+    font-size: 32px;
+    color: #b2becd; }
+
+.cta {
+  padding-top: 80px; }
+  .cta__images {
+    display: inline; }
+    .cta__images img.main-pic {
+      width: 320px;
+      height: auto;
+      max-width: 640px;
+      border-radius: 100%;
+      z-index: 10; }
+    .cta__images .grey-circle {
+      position: relative;
+      width: 340px;
+      height: 340px;
+      background-color: #e0e5eb;
+      border-radius: 100%;
+      transform: translate(0, -225px);
+      z-index: -1; }
+    .cta__images img.salad-pic {
+      width: 171px;
+      height: 171px;
+      transform: translateY(-350px);
+      border: 10px solid #fff;
+      border-radius: 100%;
+      padding: 0;
+      margin-bottom: -170px; }
+  .cta__content {
+    position: relative;
+    z-index: 20;
+    margin-top: -210px; }
+    .cta__content h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 5rem;
+      letter-spacing: 2px;
+      color: #fe4323;
+      margin-bottom: 10px; }
+    .cta__content h2 {
+      color: #808081; }
+    .cta__content p {
+      line-height: 32px; }
+
+@media (min-width: 600px) {
+  #cta .container {
+    width: 90%; }
+  #cta img.main-pic {
+    width: 480px; }
+  #cta .grey-circle {
+    width: 540px;
+    height: 540px;
+    transform: translateY(-380px); }
+  #cta img.salad-pic {
+    width: 261px;
+    height: 261px;
+    transform: translateY(-670px); }
+  #cta .cta__content {
+    margin-top: -680px;
+    margin-left: 100px;
+    max-width: 438px; }
+    #cta .cta__content h1 {
+      font-size: 6.875rem; }
+    #cta .cta__content h2 {
+      font-size: 2.25rem;
+      line-height: 44px; } }
